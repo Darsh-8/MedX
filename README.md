@@ -119,7 +119,7 @@ Access the application frontend at `http://localhost:8000` and the backend API a
 
 ## Contributors 🤝
 
-MedAI is a collaborative project developed by:
+MedX is a collaborative project developed by:
 
 - **Yash Joshi** - *Project Lead & Frontend Developer*
   - [GitHub](https://github.com/ironmark72)
