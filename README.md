@@ -121,10 +121,10 @@ Access the application frontend at `http://localhost:8000` and the backend API a
 
 MedX is a collaborative project developed by:
 
-- **Yash Joshi** - *Project Lead & Frontend Developer*
+- **Yash Joshi** - *Frontend Developer & AI Specialist*
   - [GitHub](https://github.com/ironmark72)
   
-- **Drsh Thakkar** - *Backend Developer & AI Specialist*
+- **Drsh Thakkar** - *Project Lead & Backend Developer*
   - [GitHub](https://github.com/Darsh-8)
 
 
