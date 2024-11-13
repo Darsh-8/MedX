@@ -4,6 +4,8 @@
 
 Welcome to MedX, an innovative platform that leverages cutting-edge technology to provide instant medical analysis. Our application allows users to drag and drop medical images such as X-rays and MRIs to receive quick diagnostic results.
 
+**Check out the live application [here](https://mvp.medinnov.tech).**
+
 ## Features
 
 - **🖼️ Easy Upload**: Drag and drop your medical images for seamless analysis.
@@ -17,13 +19,13 @@ Welcome to MedX, an innovative platform that leverages cutting-edge technology t
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Frontend Setup (Laravel)](#Frontend-Setup-(Laravel))
-- [Backend Setup (Django)](#backend-setup-django)
-- [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Installation]
+- [Frontend Setup (Laravel)]
+- [Backend Setup (Django)]
+- [Environment Variables]
+- [Usage]
+- [Contributing]
+- [License]
 
 ## Installation
 
