@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  overflow-y: auto;
 }
 
 
@@ -145,7 +146,7 @@ p {
   float: right;
   cursor: pointer;
   -webkit-tap-highlight-color: #0000;
-  tap-highlight-color: #0000;
+  -webkit-tap-highlight-color: #0000;
   -webkit-user-select: none;
   user-select: none;
   padding: 18px;
@@ -664,6 +665,8 @@ a:hover {
 .wrapper {
   width: 100vw;
   overflow: visible;
+  min-height: 100vh;
+  overflow: auto;
 }
 
 .slack-icon {

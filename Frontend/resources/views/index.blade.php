@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wf-domain="www.withcoherence.com" data-wf-page="6462990f476598b6fd0c9cd4" data-wf-site="6462990f476598b6fd0c9cd1">
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -15,8 +15,23 @@
                 }
             });
         </script>
-        <link href="https://cdn.prod.website-files.com/6462990f476598b6fd0c9cd1/65e61bf0c65e59df927db44b_logo256.png" rel="apple-touch-icon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <style>
+            /* Ensure body is scrollable */
+            html, body {
+                height: 100%; /* Ensure body takes full height */
+                margin: 0; /* Remove default margin */
+                overflow-y: auto; /* Allow vertical scrolling */
+            }
+
+            /* Main Wrapper */
+            .wrapper {
+                min-height: 100vh; /* Ensure wrapper takes at least full height */
+                display: flex;
+                flex-direction: column; /* Allow stacking of children */
+                overflow: auto; /* Allow scrolling within the wrapper if needed */
+            }
+        </style>
     </head>
     <body class="body">
         <!-- Main Wrapper -->
@@ -38,8 +53,6 @@
                     <div class="navbar w-nav">
                         <div class="logo_wrapper">
                             <a href="/" class="brand w-nav-brand">
-                                <img src="https://cdn.prod.website-files.com/6462990f476598b6fd0c9cd1/66ce22ac9ddb66ca0b9bcf43_logo_dark.svg" alt="MedAI Logo" class="image"/>
-                                <img src="https://cdn.prod.website-files.com/6462990f476598b6fd0c9cd1/66d0c06a70298ddd4f307c17_20.svg" alt="MedAI Icon" class="image-37"/>
                             </a>
                         </div>
                         <!-- Add navigation links here if you have them -->
@@ -67,12 +80,13 @@
                     <div class="usp-container">
                         <!-- Navigation Buttons -->
                         <div class="nav-buttons">
-                            <select class="dropdown-button" onchange="location = this.value;">
-                                <option value="" disabled selected>Choose Disease</option>
-                                <option value="/disease1">Disease 1</option>
-                                <option value="/disease2">Disease 2</option>
-                                <option value="/disease3">Disease 3</option>
-                                <!-- Add more options as needed -->
+                            <select id="diseaseDropdown" class="dropdown-button">
+                                <option value="" disabled selected>Select a Disease</option>
+                                <option value="skin-cancer">Skin Cancer</option>
+                                <option value="brain-tumour">Brain Tumour</option>
+                                <option value="parkinson-disease">Parkinson's Disease</option>
+                                <option value="diabetes-prediction">Diabetes Prediction</option>
+                                <option value="heart-attack-prediction">Heart Attack Prediction</option>
                             </select>
                         </div>
                         <!-- File Upload Area -->
@@ -268,8 +282,13 @@
         
             // Send message to backend
             function sendMessage(message) {
+                const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
                 axios.post('/botman', {
                     query: message
+                }, {
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken, // Add CSRF token to the request headers
+                    }
                 })
                 .then(response => {
                     if(response.data.answer){
