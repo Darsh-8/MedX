@@ -19,13 +19,13 @@ Welcome to MedX, an innovative platform that leverages cutting-edge technology t
 
 ## Table of Contents
 
-- [Installation]
-- [Frontend Setup (Laravel)]
-- [Backend Setup (Django)]
-- [Environment Variables]
-- [Usage]
-- [Contributing]
-- [License]
+- Installation
+- Frontend Setup (Laravel)
+- Backend Setup (Django)
+- Environment Variables
+- Usage
+- Contributing
+- License
 
 ## Installation
 
