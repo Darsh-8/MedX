@@ -1,5 +1,7 @@
 # MedX 🩺
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Overview
 
 Welcome to MedX, an innovative platform that leverages cutting-edge technology to provide instant medical analysis. Our application allows users to drag and drop medical images such as X-rays and MRIs to receive quick diagnostic results.
@@ -76,6 +78,7 @@ cd MedX
     php artisan serve
     ```
 
+
 ## Backend Setup (Django) 🐍
 
 1. Navigate to the backend directory:
@@ -113,9 +116,22 @@ cd MedX
 
 Access the application frontend at `http://localhost:8000` and the backend API at `http://localhost:8000/api`.
 
+
+## Contributors 🤝
+
+MedAI is a collaborative project developed by:
+
+- **Yash Joshi** - *Project Lead & Frontend Developer*
+  - [GitHub](https://github.com/ironmark72)
+  
+- **Drsh Thakkar** - *Backend Developer & AI Specialist*
+  - [GitHub](https://github.com/Darsh-8)
+
+
 ## Contributing 🤝
 
 We welcome contributions! Please fork the repository and submit a pull request.
+
 
 ## License 📄
 
